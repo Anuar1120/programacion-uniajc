@@ -1,4 +1,4 @@
-public class Ecuacuin {
+ publicclass Ecuacuin {
     public static void main(String[] args) {
         int A = 4;
         int B = 5; 

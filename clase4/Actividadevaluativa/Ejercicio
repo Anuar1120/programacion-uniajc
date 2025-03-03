@@ -1,0 +1,33 @@
+Inicio
+//Definir costante
+Costo_materia_prima <- 2.50
+Costo_empaque <- 0.50
+Porcentaje_ganancia <- 0.30
+Barras-por-caja <- 10
+barras producidas en un dia: "N"
+leer N
+//Calcular el costo de produccion total
+Costo_produccion_total <- (costo_produccion_total + Costo_empaque)* N 
+//Calculo del precio de venta por barra
+precio_venta_barra <- (Costo_materia_prima + Costo_empaque) * (1 + Porcentaje_ganancia)
+//calculo del ingreso total
+Ingreso_total <- Precio_venta_barra * N 
+//Calculo de numero de cajas necesarias
+Cajas_llenas <- N DIV
+(Barras_por_caja)
+Barras_sobrantes <- N MOD
+Barras_por_caja
+//mostrar los resultados
+Escribir "Costo total de produccion:",Costo_total_produccion
+ECRIBIR "Precio de venta por barra :",Precio_venta_barra
+Escribir "Ingresos diarios diarios por venta :",Ingreso_total
+Escribir"Precio de venta por barra :", Precio_venta_barra
+Escribir"Numero de cajas completas", Cajas_llenas
+Escribir "Barras sobrantes para el siguiente dia", Barras_sobrantes
+
+FIN 
+
+
+
+
+
