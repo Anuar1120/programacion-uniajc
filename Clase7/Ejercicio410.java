@@ -1,3 +1,16 @@
+//INICIO
+// Leer los números ingresados por el usuario
+//ESCRIBIR"Ingrese el primer número: "LEER num1 ESCRIBIR"Ingrese el segundo número: "LEER num2
+
+// Leer la operación a realizar
+//ESCRIBIR"Seleccione la operación (+: Suma, -: Resta, *: Multiplicación, /: División): "LEER seleccionOp
+
+// Inicializar variable resultado
+//resultado←0
+
+// Evaluar la operación seleccionada
+//SI seleccionOp="+"ENTONCES resultado←num1+num2 ESCRIBIR"El resultado de la suma es: ",resultado SINO SI seleccionOp="-"ENTONCES resultado←num1-num2 ESCRIBIR"El resultado de la resta es: ",resultado SINO SI seleccionOp="*"ENTONCES resultado←num1*num2 ESCRIBIR"El resultado de la multiplicación es: ",resultado SINO SI seleccionOp="/"ENTONCES SI num2≠0 ENTONCES resultado←num1/num2 ESCRIBIR"El resultado de la división es: ",resultado SINO ESCRIBIR"Error: No se puede dividir entre cero."FIN SI SINO ESCRIBIR"Operación no válida."FIN SI FIN
+
 package Clase7;
 
 import java.util.Scanner;
