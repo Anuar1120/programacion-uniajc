@@ -5,7 +5,6 @@ public class CajeroElectronico {
 
     public CajeroElectronico(double saldo) {
         this.saldo = saldo;
-        public void setSaldo(double saldo) {
             this.saldo = saldo;
 
     }
@@ -22,8 +21,8 @@ public class CajeroElectronico {
 
     }
 
-    public double depositar(double cantidad) {
-        return saldo += cantidad;
+    public double depositar(double Cantidad) {
+        return saldo += Cantidad;
 
     }
     public void retirar(double cantidad){
@@ -46,7 +45,7 @@ public class CajeroElectronico {
       
         }
 
-    }
+    
 
     public void TRANSFERIR(double cantidad, String destino) {
         if (cantidad <= saldo) {

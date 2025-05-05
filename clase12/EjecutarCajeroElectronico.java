@@ -8,17 +8,30 @@ public class EjecutarCajeroElectronico {
 
         //Escenario 1
         //Depositar 1300 dolares
-        System.out.prinln("Nuevo saldo: " + objP1.Depositar (1300.0));
+        System.out.prinln("Nuevo saldo: " + objP1.depositar (1300.0));
 
         //consultar saldo actual
-        System.out.println("Saldo Actual: " + obP1.consultarSaldo());
+        System.out.println("Saldo Actual: " + objP1.consultarSaldo());
 
         //Retirar una cantidad de 2000.0
         objP1,retirar(2000.0);
 
         //Transferir 200 a Medelin
-        objP1.transferir(cantidad: 200.0, destino: "Medellin");
+        objP1.transferir(Cantidad: 200.0, destino: "Medellin");
         
     }
+
+    //Escenario 2
+    //Se crea el objeto objp2 con saldo inicial de 500.0
+    CajeroElectronico objP2 = new CajeroElectronico(500.0);
+
+    objP2.depositar(cantidad:200.0);
+
+
+    objP2.retirar(Cantidad: 1000.0);
+
+    objP2.trranferir(cantidad: 800.0, destino: "Jhon Cano");
+
+
     
 }
