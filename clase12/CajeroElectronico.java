@@ -5,6 +5,9 @@ public class CajeroElectronico {
 
     public CajeroElectronico(double saldo) {
         this.saldo = saldo;
+        public void setSaldo(double saldo) {
+            this.saldo = saldo;
+
     }
 
     // Metodos
@@ -40,15 +43,18 @@ public class CajeroElectronico {
 
     public double consultarSaldo() {
         return saldo;
+      
+        }
 
     }
+
     public void TRANSFERIR(double cantidad, String destino) {
         if (cantidad <= saldo) {
-            System.out.println("Se realizo una transferencia: " + cantidad + " a " + destino + " y su saldo nuevo es: " + saldo);
+            System.out.println(
+                    "Se realizo una transferencia: " + cantidad + " a " + destino + " y su saldo nuevo es: " + saldo);
         } else {
             System.out.println("La tranferencia no se pudo hacer");
         }
     }
-    
 
 }
