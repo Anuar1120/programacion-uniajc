@@ -8,7 +8,6 @@ public class Ejercicio7 {
         Random rand = new Random();
         int contPares = 0, contImpares = 0;
 
-        // Llenar A y contar pares e impares
         for (int i = 0; i < A.length; i++) {
             A[i] = rand.nextInt(100) + 1;
             if (A[i] % 2 == 0) {
@@ -30,7 +29,6 @@ public class Ejercicio7 {
             }
         }
 
-        // Mostrar resultados
         System.out.println("Arreglo A: ");
         imprimirArreglo(A);
 
