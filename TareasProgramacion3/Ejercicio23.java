@@ -8,6 +8,7 @@ public class Ejercicio23 {
             {1, 0, -15}
         };
 
+
         int filas = matriz.length;
         int[] mayorAbsoluto = new int[filas];
 
@@ -19,6 +20,7 @@ public class Ejercicio23 {
                     maxAbs = actualAbs;
                 }
             }
+            
             mayorAbsoluto[i] = maxAbs;
         }
 
