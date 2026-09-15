@@ -10,7 +10,7 @@ public class Ejercicio20 {
                 if (j >= i) {
                     matriz[i][j] = 0; // Ceros en la diagonal principal y hacia arriba
                 } else {
-                    matriz[i][j] = (i + j); // Valores arbitrarios abajo para distinguirlo
+                    matriz[i][j] = (i + j); // Los valores arbitrarios abajo para distinguirlo
                 }
             }
         }
