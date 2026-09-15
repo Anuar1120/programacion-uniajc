@@ -46,9 +46,11 @@ public class Ejercicio24 {
         for (int i = 0; i < 12; i++) {
             if (totalPorMes[i] > promedioMensual) superiores++;
             else if (totalPorMes[i] < promedioMensual) inferiores++;
+
         }
         System.out.println("b. Meses con cosecha superior al promedio: " + superiores);
         System.out.println("c. Meses con cosecha inferior al promedio: " + inferiores);
+        
 
         // d. Mes con mayor producción total
         int mesMayor = 0;
