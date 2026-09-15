@@ -7,8 +7,8 @@ public class Ejercicio12 {
         int count = 0;
 
         // Contar cuántas veces aparece X para dimensionar B
-        for (int num : A) {
-            if (num == x) count++;
+        for (int nume : A) {
+            if (nume == x) count++;
         }
 
         int[] B = new int[count];
