@@ -16,9 +16,9 @@ public class Ejercicio10 {
         }
 
         System.out.print("Arreglo B (Suma de opuestos): ");
-        for (int num : B) {
-            System.out.print(num + " ");
+        for (int nume : B) {
+            System.out.print(nume + " ");
         }
         System.out.println();
+    
     }
-}
