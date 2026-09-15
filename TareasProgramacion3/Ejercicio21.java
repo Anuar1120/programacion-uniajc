@@ -5,7 +5,7 @@ public class Ejercicio21 {
         int[][] matriz = {
             {2, 5, 8},
             {3, 4, 6},
-            {1, 9, 2}
+            {1, 9, 4}
         };
 
         int filas = matriz.length;
