@@ -20,17 +20,17 @@ public class Ejercicio13 {
         int[] menores = new int[cMenores];
         int iMay = 0, iMen = 0;
 
-        for (int num : A) {
-            if (num > media) mayores[iMay++] = num;
-            else if (num < media) menores[iMen++] = num;
+        for (int nume : A) {
+            if (nume > media) mayores[iMay++] = nume;
+            else if (nume < media) menores[iMen++] = nume;
         }
 
         System.out.println("Media: " + media);
         System.out.print("Mayores que la media: ");
-        for (int num : mayores) System.out.print(num + " ");
+        for (int nume : mayores) System.out.print(nume + " ");
         System.out.println();
         System.out.print("Menores que la media: ");
-        for (int num : menores) System.out.print(num + " ");
+        for (int nume : menores) System.out.print(nume + " ");
         System.out.println();
     }
 }
