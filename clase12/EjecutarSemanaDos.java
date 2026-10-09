@@ -1,3 +1,4 @@
+package clase12;
 public class EjecutarSemanaDos {
     public static void main(String[] args) {
         

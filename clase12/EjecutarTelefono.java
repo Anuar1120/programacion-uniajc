@@ -1,5 +1,4 @@
-import clase12.Telefono;
-
+package clase12;
 public class EjecutarTelefono {
 
     /**
