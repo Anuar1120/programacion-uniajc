@@ -1,10 +1,10 @@
 package estructuracolas;
 
 public class Repartidor {
-String numSS;           // numero de seguridad social
+String numSS;           
     String nombre;
     int diasTrabajados;
-    String ultimaEntidad;   // ultima entidad anunciada
+    String ultimaEntidad;   
 
     public Repartidor(String numSS, String nombre, int diasTrabajados, String ultimaEntidad) {
         this.numSS = numSS;

@@ -1,9 +1,5 @@
 package estruturapilas;
 
-    /**
- * Lista enlazada circular de caracteres.
- * 'ultimo' apunta al último nodo y ultimo.sig es el primero.
- */
 public class ListaCircular {
 
     private static class Nodo {
@@ -33,12 +29,14 @@ public class ListaCircular {
     }
 
     public char extraerPrimero() {
-        if (ultimo == null) throw new RuntimeException("Lista vacía");
+        if (ultimo == null)
+            throw new RuntimeException("Lista vacía");
         Nodo primero = ultimo.sig;
         char c = primero.dato;
-        if (primero == ultimo) ultimo = null;
-        else ultimo.sig = primero.sig;
+        if (primero == ultimo)
+            ultimo = null;
+        else
+            ultimo.sig = primero.sig;
         return c;
     }
 }
-    

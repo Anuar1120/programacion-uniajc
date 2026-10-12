@@ -27,9 +27,6 @@ public class ListaRepartidores {
         tam++;
     }
 
-    /**
-     * Devuelve el repartidor con ese numero de seguridad social, o null si no esta.
-     */
     public Repartidor buscar(String numSS) {
         Nodo actual = cabeza;
         while (actual != null) {

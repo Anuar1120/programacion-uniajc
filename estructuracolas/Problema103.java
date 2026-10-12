@@ -1,4 +1,5 @@
 package estructuracolas;
+
 import java.util.*;
 
 public class Problema103 {
@@ -14,8 +15,8 @@ public class Problema103 {
             carritos.encolar(i);
         }
 
-        Cola<Cliente> espera = new Cola<>(); // clientes sin carrito
-        List<Cliente> comprando = new ArrayList<>(); // clientes dentro comprando
+        Cola<Cliente> espera = new Cola<>();
+        List<Cliente> comprando = new ArrayList<>();
         List<Cola<Cliente>> cajas = new ArrayList<>();
         for (int i = 0; i < NUM_CAJAS; i++) {
             cajas.add(new Cola<Cliente>());
@@ -40,7 +41,6 @@ public class Problema103 {
                 }
             }
 
-            // 2. Las cajas atienden al primero de su cola
             for (int k = 0; k < NUM_CAJAS; k++) {
                 Cola<Cliente> caja = cajas.get(k);
                 if (!caja.esVacia()) {
@@ -48,7 +48,7 @@ public class Problema103 {
                     c.tiempoPago--;
                     if (c.tiempoPago <= 0) {
                         caja.desencolar();
-                        carritos.encolar(c.carrito); // el carrito queda disponible
+                        carritos.encolar(c.carrito);
                         atendidos++;
                         System.out.println(c + " paga en caja " + (k + 1)
                                 + " y deja libre el carrito " + c.carrito);
@@ -64,7 +64,6 @@ public class Problema103 {
                 System.out.println(c + " toma el carrito " + c.carrito);
             }
 
-            // 4. Los clientes que estan comprando avanzan un minuto
             Iterator<Cliente> it = comprando.iterator();
             while (it.hasNext()) {
                 Cliente c = it.next();
@@ -77,7 +76,6 @@ public class Problema103 {
                 }
             }
 
-            // 5. Estado al final del minuto
             System.out.println("Carritos libres: " + carritos.tamano()
                     + " | Esperando carrito: " + espera.tamano()
                     + " | Comprando: " + comprando.size());

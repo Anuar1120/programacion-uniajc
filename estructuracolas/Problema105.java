@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Problema105 {
      public static void main(String[] args) {
-        // Lista que ya existe con contenido
+
         ListaRepartidores lista = new ListaRepartidores();
         lista.insertarFinal(new Repartidor("1001", "Ana Gomez", 5, "Banco Andino"));
         lista.insertarFinal(new Repartidor("1002", "Luis Perez", 3, "Pizzeria Roma"));
@@ -13,7 +13,6 @@ public class Problema105 {
         System.out.println("LISTA ANTES DE ACTUALIZAR:");
         lista.mostrar();
 
-        // Paso 1: crear la cola con los datos del dia
         Cola<RegistroDia> cola = new Cola<>();
         Scanner sc = new Scanner(System.in);
         System.out.println("\nRegistros del dia. Escribe: numeroSS entidad  (ejemplo: 1002 Cine Sol)");
@@ -35,7 +34,7 @@ public class Problema105 {
 
         System.out.println("\nCOLA DEL DIA: " + cola);
 
-        // Paso 2: actualizar la lista a partir de la cola
+     
         while (!cola.esVacia()) {
             RegistroDia reg = cola.desencolar();
             Repartidor r = lista.buscar(reg.numSS);

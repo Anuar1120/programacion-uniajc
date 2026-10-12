@@ -1,6 +1,4 @@
-/**
- * TAD Pila (LIFO) implementada con nodos enlazados.
- */
+package estruturapilas;
 public class Pila<T> {
 
     private static class Nodo<T> {
@@ -47,7 +45,6 @@ public class Pila<T> {
         tam = 0;
     }
 
-    /** Muestra el contenido de base a cima, sin modificar la pila. */
     @Override
     public String toString() {
         java.util.LinkedList<T> tmp = new java.util.LinkedList<>();

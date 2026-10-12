@@ -13,7 +13,7 @@ public class Problema94 {
         return pilas;
     }
 
-    /** Elimina la primera aparición de 'elem' (desde la cima). */
+   
     public static boolean eliminar(Pila<Integer> pila, int elem) {
         Pila<Integer> aux = new Pila<>();
         boolean encontrado = false;
